@@ -1,0 +1,38 @@
+<h2 id="bienvenido"></h2>
+
+<h3 id="email"></h3>
+<h3 id="age"></h3>
+
+<a href="/logOut">Desloguear</a>
+
+<h1>Productos</h1>
+
+<table id="productsTable" class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Título</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Category</th>
+            <th scope="col">Código</th>
+            <th scope="col">Thumbnail</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each products}}
+        <tr>
+            <td>{{this._id}}</td>
+            <td>{{this.title}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.stock}}</td>
+            <td>{{this.category}}</td>
+            <td>{{this.code}}</td>
+            <td>{{this.thumbnail}}</td>
+            
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
